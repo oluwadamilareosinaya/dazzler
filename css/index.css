@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #fcfcfc;
+}
+
+header {
+    background-image: url("/img/header.svg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-image {
+    margin-top: 60px;
+}
+
+.hero-text h1 {
+    font-weight: bolder;
+    font-size: 30px;
+    line-height: 49px;
+    margin-top: 100px;
+    color: #fff;
+}
+
+.hero-text p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #fff;
+    margin-top: 28px;
+}
+
+.hero-form {
+    margin-top: 65px;
+}
+
+.hero-form-input {
+    margin-right: 17px;
+}
+
+.first-section {
+    margin-top: 150px;
+}
+
+.first-section-hero {
+    margin-top: 80px;
+}
+
+.first-section-hero h2{
+    font-weight: bolder;
+    color: #333333;
+    margin-top: 10px;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.first-section-hero p{
+    color: #333333;
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.carousel-item img {
+    height: 500px;
+    width: 1000px !important;
+}
+
+.second-section {
+    background: url(/img/more-hero.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+}
+
+.second-section h1 {
+    color: #fff;
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: bolder;
+}
+
+.second-section p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.second-section button {
+    padding: 18px 44px;
+    margin-top: 30px;
+    font-weight: bolder;
+    background-color: #4574D2 !important;
+}
+
+.third-section {
+    margin-top: 80px;
+}
+
+.third-section-intro {
+    text-align: center;
+    color: #000000;
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: bolder;
+}
+
+
+
+footer a{
+    color: white !important;
+    display: block;
+    line-height: 270%;
+    font-weight: bold;
+}
+footer a:hover{
+    opacity: 0.9 !important;
+    color: white !important;
+    text-decoration: none;
+}
+
+footer{
+    background-color: #333333;
+    padding: 4rem;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    footer a {
+        font-size: 0.7rem;
+    }
+}
