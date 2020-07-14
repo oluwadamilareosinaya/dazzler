@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-image: url("/img/header.svg");
+    background-image: url("/img/header.png");
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -69,7 +69,7 @@ header {
 }
 
 .second-section {
-    background: url(/img/more-hero.svg);
+    background: url(/img/more-hero.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
