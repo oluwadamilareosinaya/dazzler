@@ -1,11 +1,11 @@
 const email = $('#email');
 
-$('#form').submit(function(e){
+$('#g-form').submit(function(e){
     e.preventDefault();
     $.ajax({
         type: 'POST',
         url: 'insert.php',
-        data: $('#form').serialize(),
+        data: $('#g-form').serialize(),
         success: function() {
             alert("Thank You!, We will be in touch.")
         },
