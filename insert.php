@@ -19,7 +19,7 @@ if(isset($_POST)) {
     if (!mysqli_query($dbconnect, $query)) {
         die('An error occured.');
     } else {
-        echo "Thank You! Message received";
+        echo "Thank You!, We will be in touch. php";
     }
 }
 

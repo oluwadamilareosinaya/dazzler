@@ -7,7 +7,7 @@ $('#form').submit(function(e){
         url: 'insert.php',
         data: $('#form').serialize(),
         success: function() {
-            alert('Thank You!, Message received')
+            alert("Thank You!, We will be in touch.")
         },
         error: function() {
             alert('Oops! an error occured')
