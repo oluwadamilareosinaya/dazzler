@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: #fcfcfc;
+    background: #E5E5E5;
 }
 
 header {
@@ -12,6 +12,10 @@ header {
     background-repeat: no-repeat;
 }
 
+.navbar-brand {
+    margin-top: 20px !important;
+}
+
 .hero-image {
     margin-top: 60px;
 }
@@ -20,7 +24,7 @@ header {
     font-weight: bolder;
     font-size: 30px;
     line-height: 49px;
-    margin-top: 100px;
+    margin-top: 60px;
     color: #fff;
 }
 
@@ -33,7 +37,7 @@ header {
 }
 
 .hero-form {
-    margin-top: 65px;
+    margin-top: 45px;
 }
 
 .hero-form-input {
@@ -41,11 +45,48 @@ header {
 }
 
 .first-section {
-    margin-top: 150px;
+    margin-top: 100px;
+}
+
+.how-it-works h1 {
+    font-weight: bolder;
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+.how-it-works h1::after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block;
+    margin-left: 400px;
+    width: 114px; /* Change this to whatever width you want. */
+    padding-top: 10px; /* This creates some space between the element and the border. */
+    border-bottom: 4px solid #4574D2;
+}
+
+.how-it-works-card {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.how-it-works-img {
+    float: left;
+}
+
+.how-it-works-text {
+    color: #333333;
+    font-size: 15px !important;
+    margin-bottom: 0 !important;
+    padding-top: 6px;
+    padding-left: 15px;
+    overflow: hidden;
+}
+
+.fs-hero-c {
+    margin-top: 60px;
 }
 
 .first-section-hero {
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .first-section-hero h2{
@@ -74,6 +115,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     height: 350px;
+    margin-top: 60px;
 }
 
 .second-section h1 {
@@ -97,7 +139,7 @@ header {
 }
 
 .third-section {
-    margin-top: 80px;
+    margin-top: 90px;
 }
 
 .third-section-intro {
@@ -105,31 +147,155 @@ header {
     color: #000000;
     font-size: 30px;
     line-height: 45px;
+    margin-bottom: 50px;
+}
+
+.price-container {
+    padding: 0 300px;
+}
+
+.price-container-card {
+    border-top: 6px solid #D55858;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.price-container-card-body {
+    padding: 2rem !important;
+    padding-right: 0 !important;
+}
+
+.price-container-card-body h5, .price-container-card-body h6 {
+    color: #D55858 !important;
+}
+
+ul.free-features {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.free-features img {
+    float: left;
+    margin-top: 15px;
+}
+
+.free-features li {
+    padding: 10px;
+    padding-left: 2rem;
+    vertical-align: middle;
+    color: #BAAEAE;
+    font-size: 16px;
+}
+
+.free-btn {
+    margin-left: 30px;
+    padding: 5px 30px;
+    font-size: 16px;
+}
+
+.price-container-card_premium {
+    border-top: 6px solid #3BA95A;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.price-container-card-body_premium {
+    padding: 2rem !important;
+    padding-right: 0 !important;
+}
+
+.price-container-card-body_premium h5, .price-container-card-body_premium h6 {
+    color: #3BA95A !important;
+}
+
+ul.premium-features {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.premium-features img {
+    float: left;
+    margin-top: 15px;
+}
+
+.premium-features li {
+    padding: 10px;
+    padding-left: 2rem;
+    vertical-align: middle;
+    color: #3BA95A;
+    font-size: 16px;
+}
+
+.premium-btn {
+    margin-left: 15px;
+    padding: 5px 30px;
+    font-size: 16px;
+}
+
+.packages {
+    margin:60px 0 70px 0 ;
+}
+
+.package-card {
+    padding: 25px 45px 10px 45px !important;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.borderless {
+    border-top: none !important;
+}
+
+.t-end {
+    text-align: end;
+}
+
+th {
+    color: #3BA95A;
+}
+
+.special-offer {
+    font-size: 16px;
+    text-align: center;
     font-weight: bolder;
-}
-
-
-
-footer a{
-    color: white !important;
-    display: block;
-    line-height: 270%;
-    font-weight: bold;
-}
-footer a:hover{
-    opacity: 0.9 !important;
-    color: white !important;
-    text-decoration: none;
+    margin-bottom: 40px;
 }
 
 footer{
     background-color: #333333;
-    padding: 4rem;
+    padding: 1.7rem;
 }
 
-/* Responsiveness */
-@media (max-width: 768px) {
-    footer a {
-        font-size: 0.7rem;
+.footer-brand {
+    margin-bottom: 30px;
+}
+
+footer h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.socials img {
+    padding: 10px;
+}
+
+footer p {
+    margin-top: 20px;
+    color: #fff;
+}
+
+@media screen and (max-width: 576px) {
+    .how-it-works h1::after {
+        content: ""; /* This is necessary for the pseudo element to work. */ 
+        display: block;
+        margin-left: 50px;
+        width: 100px; /* Change this to whatever width you want. */
+        padding-top: 10px; /* This creates some space between the element and the border. */
+        border-bottom: 4px solid #4574D2;
+    }
+
+    .price-container {
+        padding: 40px;
     }
 }
