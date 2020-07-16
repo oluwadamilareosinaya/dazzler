@@ -6,7 +6,7 @@ body {
 
 header {
     background-image: url("/img/header.png");
-    height: 100vh;
+    height: 85vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -29,7 +29,7 @@ header {
 }
 
 .hero-text p {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 18px;
     line-height: 27px;
     color: #fff;
@@ -85,29 +85,22 @@ header {
     margin-top: 60px;
 }
 
-.first-section-hero {
-    margin-top: 60px;
-}
-
-.first-section-hero h2{
+.screenshots h1 {
     font-weight: bolder;
-    color: #333333;
-    margin-top: 10px;
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 32px;
+    margin-bottom: 80px;
+    margin-top: 20px;
 }
 
-.first-section-hero p{
-    color: #333333;
-    margin-top: 10px;
-    font-size: 20px;
-    line-height: 30px;
+.screenshots h1::after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block;
+    margin-left: 470px;
+    width: 114px; /* Change this to whatever width you want. */
+    padding-top: 10px; /* This creates some space between the element and the border. */
+    border-bottom: 4px solid #4574D2;
 }
 
-.carousel-item img {
-    height: 500px;
-    width: 1000px !important;
-}
 
 .second-section {
     background: url(/img/more-hero.png);
@@ -285,17 +278,366 @@ footer p {
     color: #fff;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1199px) { 
+
     .how-it-works h1::after {
-        content: ""; /* This is necessary for the pseudo element to work. */ 
-        display: block;
-        margin-left: 50px;
-        width: 100px; /* Change this to whatever width you want. */
-        padding-top: 10px; /* This creates some space between the element and the border. */
-        border-bottom: 4px solid #4574D2;
+        margin-left: 325px;
+        width: 90px;
+    }
+
+    .screenshots h1::after {
+        margin-left: 390px;
+        width: 90px;
+    }
+
+    .price-container {
+        padding: 180px;
+        padding-bottom: 0;
+        padding-top: 40px;
+    }
+
+    .first-section {
+        margin-top: 60px;
+    }
+    
+    .how-it-works h1 {
+        font-weight: bolder;
+        font-size: 29px;
+        margin-bottom: 20px;
+    }
+
+    .screenshots h1 {
+        font-weight: bolder;
+        font-size: 29px;
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+
+    .how-it-works-img {
+        float: left;
+        margin-top: 5px;
+        width: 25px;
+        height: 25px;
+    }
+    
+    .how-it-works-text {
+        font-size: 13px !important;
+    }
+
+    .fs-hero-c {
+        margin-top: 20px;
+    }
+
+    .second-section {
+        margin-top: 70px;
+    }
+
+    .third-section {
+        margin-top: 50px;
+    }
+    
+    .third-section-intro {
+        font-size: 30px;
+        margin-bottom: 0;
+        padding: 0 30px;
+    }
+
+    .price-pad {
+        margin-bottom: 50px;
+    }
+
+    .free-btn {
+        margin-left: 38px;
+    }
+
+    .premium-btn {
+        margin-left: 20px;
+    }
+
+    .packages {
+        margin:10px 0 60px 0 ;
+    }
+    
+    .package-card {
+        padding: 10px 15px 0 15px !important;
+    }
+
+    th{
+        font-size: 12px;
+    }
+
+    .special-offer {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 770px) { 
+    
+    .hero-text h1 {
+        font-size: 24px;
+        line-height: 35px;
+        margin-top: 20px;
+    }
+    
+    .hero-text p {
+        font-size: 15px;
+        line-height: 24px;
+        margin-top: 18px;
+    }
+    
+    .hero-form {
+        margin-top: 15px;
+    }
+    
+    .hero-form-input {
+        margin-right: 17px;
+    }
+
+    .how-it-works h1::after {
+        margin-left: 205px;
+        width: 90px;
+    }
+
+    .screenshots h1::after {
+        margin-left: 270px;
+        width: 90px;
+    }
+
+    .price-container {
+        padding: 80px;
+        padding-bottom: 0;
+    }
+
+    .first-section {
+        margin-top: 60px;
+    }
+    
+    .how-it-works h1 {
+        font-weight: bolder;
+        font-size: 29px;
+        margin-bottom: 0;
+    }
+
+    .screenshots h1 {
+        font-weight: bolder;
+        font-size: 29px;
+        margin-bottom: 30px;
+    }
+
+    .how-it-works-img {
+        float: left;
+        margin-top: 5px;
+        width: 25px;
+        height: 25px;
+    }
+    
+    .how-it-works-text {
+        font-size: 13px !important;
+    }
+
+    .fs-hero-c {
+        margin-top: 20px;
+    }
+
+    .third-section {
+        margin-top: 50px;
+    }
+    
+    .third-section-intro {
+        font-size: 25px;
+        margin-bottom: 0;
+        padding: 0 30px;
+    }
+
+    .price-pad {
+        margin-bottom: 50px;
+    }
+
+    .free-btn {
+        margin-left: 38px;
+    }
+
+    .premium-btn {
+        margin-left: 20px;
+    }
+
+    .packages {
+        margin:10px 0 60px 0 ;
+    }
+    
+    .package-card {
+        padding: 10px 15px 0 15px !important;
+    }
+
+    th{
+        font-size: 12px;
+    }
+
+    .special-offer {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero-text h1 {
+        font-size: 24px;
+        line-height: 35px;
+        margin-top: 30px;
+    }
+    
+    .hero-text p {
+        font-size: 15px;
+        line-height: 24px;
+        margin-top: 18px;
+    }
+    
+    .hero-form {
+        margin-top: 15px;
+    }
+    
+    .hero-form-input {
+        margin-right: 17px;
+    }
+
+    .how-it-works h1::after {
+        margin-left: 53px;
+        width: 80px;
+    }
+
+    .screenshots h1::after {
+        margin-left: 110px;
+        width: 90px;
     }
 
     .price-container {
         padding: 40px;
+        padding-bottom: 0;
+    }
+
+    .first-section {
+        margin-top: 60px;
+    }
+    
+    .how-it-works h1 {
+        font-weight: bolder;
+        font-size: 27px;
+        margin-bottom: 0;
+    }
+
+    .screenshots h1 {
+        font-weight: bolder;
+        font-size: 27px;
+        margin-bottom: 30px;
+    }
+
+    .how-it-works-img {
+        float: left;
+        margin-top: 5px;
+        width: 25px;
+        height: 25px;
+    }
+    
+    .how-it-works-text {
+        font-size: 13px !important;
+    }
+
+    .fs-hero-c {
+        margin-top: 20px;
+    }
+
+    .third-section {
+        margin-top: 50px;
+    }
+    
+    .third-section-intro {
+        font-size: 25px;
+        margin-bottom: 0;
+        padding: 0 30px;
+    }
+
+    .price-pad {
+        margin-bottom: 50px;
+    }
+
+    .free-btn {
+        margin-left: 70px;
+    }
+
+    .premium-btn {
+        margin-left: 55px;
+    }
+
+    .packages {
+        margin:50px 0 60px 0 ;
+    }
+    
+    .package-card {
+        padding: 10px 15px 0 15px !important;
+    }
+
+    th{
+        font-size: 12px;
+    }
+
+    .special-offer {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .how-it-works h1::after {
+        margin-left: 37px;
+        width: 80px;
+    }
+
+    .screenshots h1::after {
+        margin-left: 91px;
+        width: 80px;
+    }
+    
+    .how-it-works h1 {
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+
+    .screenshots h1 {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    .how-it-works-img {
+        float: left;
+        margin-top: 8px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .price-pad {
+        margin-bottom: 50px;
+    }
+
+    .free-btn {
+        margin-left: 50px;
+    }
+
+    .premium-btn {
+        margin-left: 35px;
+    }
+
+    .packages {
+        margin:50px 0 60px 0 ;
+    }
+    
+    .package-card {
+        padding: 5px 10px 0 10px !important;
+    }
+
+    th{
+        font-size: 11px;
+    }
+
+    .special-offer {
+        font-size: 12px;
     }
 }
