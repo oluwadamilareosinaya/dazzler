@@ -1,19 +1,39 @@
 <?php
-    $email = $_POST["email"];
 
-    //database connection
+$hostname = "us-cdbr-east-02.cleardb.com";
+$username = "b32176e191c330";
+$password = "2f0d4b44";
+$db = "heroku_2257288dd8057a2";
 
-    $conn = new mysqli('us-cdbr-east-02.cleardb.com','b32176e191c330','2f0d4b44','heroku_2557288dd8057a2');
-	if($conn->connect_error){
-		echo "$conn->connect_error";
-		die("Connection Failed : ". $conn->connect_error);
-	} else {
-		$stmt = $conn->prepare("insert into test_table(email) values(?)");
-		$stmt->bind_param("s", $email);
-		$execval = $stmt->execute();
-		echo $execval;
-		echo "Registration successfully...";
-		$stmt->close();
-		$conn->close();
-	}
+$dbconnect=mysqli_connect($hostname,$username,$password,$db);
+
+if($dbconnect->connect_error) {
+    die("Database connection failed: " . $dbconnect->connect_error);
+}
+
+if(isset($_POST)) {
+    $name=$_POST['name'];
+    $email=$_POST['email'];
+    $message=$_POST['message'];
+
+    $query = "INSERT INTO `subscribers` (`email`) VALUES ('{$email}')";
+
+    if (!mysqli_query($dbconnect, $query)) {
+        die('An error occured.');
+    } else {
+        echo "Thank You! Message received";
+    }
+}
+
 ?>
+
+
+mysql://
+b32176e191c330
+:
+2f0d4b44
+@
+us-cdbr-east-02.cleardb.com
+/
+heroku_2257288dd8057a2
+?reconnect=true
