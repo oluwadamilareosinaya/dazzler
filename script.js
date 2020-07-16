@@ -1,6 +1,4 @@
-const name = $('#name');
 const email = $('#email');
-const message = $('#message');
 
 $('#form').submit(function(e){
     e.preventDefault();

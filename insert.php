@@ -12,9 +12,7 @@ if($dbconnect->connect_error) {
 }
 
 if(isset($_POST)) {
-    $name=$_POST['name'];
     $email=$_POST['email'];
-    $message=$_POST['message'];
 
     $query = "INSERT INTO `subscribers` (`email`) VALUES ('{$email}')";
 
@@ -26,14 +24,3 @@ if(isset($_POST)) {
 }
 
 ?>
-
-
-mysql://
-b32176e191c330
-:
-2f0d4b44
-@
-us-cdbr-east-02.cleardb.com
-/
-heroku_2257288dd8057a2
-?reconnect=true
