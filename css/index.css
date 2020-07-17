@@ -131,6 +131,10 @@ header {
     overflow: hidden;
 }
 
+.screens-img {
+    overflow: hidden;
+}
+
 .mag {
     width: 100%;
 }
@@ -314,6 +318,10 @@ footer h2 {
 
 .socials img {
     padding: 10px;
+}
+
+.footer-anime {
+    overflow: hidden;
 }
 
 footer p {
