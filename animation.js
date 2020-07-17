@@ -1,0 +1,1 @@
+gsap.from(".navbar-brand", {duration: 2, opacity: 0.5, x: -200});
