@@ -131,7 +131,13 @@ header {
     overflow: hidden;
 }
 
+.mag {
+    width: 100%;
+}
 
+.d-watch {
+    margin-top: 55px;
+}
 
 .second-section {
     background: url(/img/more-hero.png);
@@ -481,6 +487,10 @@ footer p {
         margin-bottom: 30px;
     }
 
+    .d-watch {
+        margin-top: 35px;
+    }
+
     .how-it-works-img {
         float: left;
         margin-top: 5px;
@@ -575,6 +585,14 @@ footer p {
 
     .screenshots h1::after {
         width: 90px;
+    }
+
+    .mag {
+        margin-bottom: 10px;
+    }
+
+    .d-watch {
+        margin-top: 0;
     }
 
     .price-container {
