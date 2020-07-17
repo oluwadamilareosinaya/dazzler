@@ -4,7 +4,7 @@ $('#form').submit(function(e){
     e.preventDefault();
     $.ajax({
         type: 'POST',
-        url: 'insert.php',
+        url: '/php/insert.php',
         data: $('#form').serialize(),
         success: function() {
             alert("Thank You!, We will be in touch.")
