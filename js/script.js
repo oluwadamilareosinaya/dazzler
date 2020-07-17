@@ -5,10 +5,10 @@ $('#form').submit(function(e){
         url: '/php/insert.php',
         data: $('#form').serialize(),
         success: function() {
-            alert("Thank You!, We will be in touch.")
+            swal("Thank You!", "We will be in touch!", "success");
         },
         error: function() {
-            alert('Oops! an error occured')
+            swal("Sorry", "Let's try that again", "error");
         },
         complete:function(){
             $('#form').each(function(){
